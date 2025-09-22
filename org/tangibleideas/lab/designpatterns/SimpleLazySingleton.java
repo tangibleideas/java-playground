@@ -1,0 +1,16 @@
+package org.tangibleideas.lab.designpatterns;
+
+public class SimpleLazySingleton {
+
+    private static SimpleLazySingleton instance;
+
+    public static SimpleLazySingleton getInstance() {
+        if (instance == null) {
+            instance = new SimpleLazySingleton();
+        }
+        return instance;
+    }
+
+    private SimpleLazySingleton() {
+    }
+}

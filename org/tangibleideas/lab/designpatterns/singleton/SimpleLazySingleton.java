@@ -1,4 +1,4 @@
-package org.tangibleideas.lab.designpatterns;
+package org.tangibleideas.lab.designpatterns.singleton;
 
 public class SimpleLazySingleton {
 

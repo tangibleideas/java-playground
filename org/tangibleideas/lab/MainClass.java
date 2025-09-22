@@ -1,9 +1,25 @@
 package org.tangibleideas.lab;
 
-import org.tangibleideas.lab.designpatterns.*;
+import org.tangibleideas.lab.designpatterns.builder.Resume;
+import org.tangibleideas.lab.designpatterns.singleton.*;
 
 public class MainClass {
     public static void main(String[] args) {
+
+        // BUILDER - USAGE EXAMPLE
+        Resume myResume1 = new Resume.Builder()
+                .name("My Name")
+                .email("myemail@nodomain.com")
+                .summary("New summary")
+                .addExperience("experience 1")
+                .addExperience("experience 2")
+                .build();
+        System.out.println(myResume1);
+
+        Resume myResume2 = new Resume.Builder()
+                .addExperience("Everything")
+                .build();
+        System.out.println(myResume2);
 
 
         // SINGLETON -- QUICK SANITY CHECK

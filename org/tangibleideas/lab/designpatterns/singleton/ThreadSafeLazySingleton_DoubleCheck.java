@@ -17,4 +17,5 @@ public class ThreadSafeLazySingleton_DoubleCheck {
 
     private ThreadSafeLazySingleton_DoubleCheck() {
     }
+
 }
